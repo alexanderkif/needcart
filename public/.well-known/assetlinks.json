@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.needcart",
+      "sha256_cert_fingerprints": [
+        "7A:B5:3D:63:8D:08:8A:B0:43:0B:8A:EE:76:32:48:85:14:E5:A0:14:31:F1:19:47:7E:D1:19:8C:37:E8:28:60"
+      ]
+    }
+  }
+]

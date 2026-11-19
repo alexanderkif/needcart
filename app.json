@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "NeedCart",
+    "slug": "needcart",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "needcart",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "app.needcart",
+      "supportsTablet": true,
+      "associatedDomains": ["applinks:app.needcart.app"]
+    },
+    "android": {
+      "package": "app.needcart",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "needcart.vercel.app",
+              "pathPrefix": "/auth"
+            },
+            {
+              "scheme": "https",
+              "host": "needcart.vercel.app",
+              "pathPrefix": "/join"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "NeedCart",
+      "shortName": "NeedCart",
+      "themeColor": "#121212",
+      "backgroundColor": "#FAF7F0"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FAF7F0",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 160,
+          "dark": {
+            "backgroundColor": "#121212",
+            "image": "./assets/images/splash-icon-dark.png"
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NeedCart uses your photos to set a profile avatar.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "336d26a4-7825-41d5-a751-ebb92100e2db"
+      }
+    },
+    "owner": "sahakif"
+  }
+}
